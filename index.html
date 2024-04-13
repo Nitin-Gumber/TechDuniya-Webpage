@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Tailwind Project</title>
+</head>
+<body> 
+    <div id="wrapper" class="h-screen w-screen overflow-x-hidden overflow-y-auto ">
+        <nav class="flex justify-between items-center p-3 h-auto">
+            <a href="#" id="brandLogo" class="flex gap-1 items-center">
+                <img class="object-cover max-w-12 max-h-12" src="assets/asset 0.png" alt="">
+                <span class="text-lg font-display font-medium">TechDuniya</span>
+            </a>
+            <div id="nav-menu" class="hidden md:flex gap-6 mr-9">
+                <a href="#" class="font-medium hover:text-primary">Pricing</a>
+                <a href="#" class="font-medium hover:text-primary">Docs</a>
+                <a href="#" class="font-medium hover:text-primary">Changelog</a>
+                <a href="#" class="font-medium hover:text-primary">Blogs</a>
+                <a href="#" class="font-medium hover:text-primary">Login</a>
+            </div>
+            <button class="hidden md:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 duration-300">
+                <img src="./assets/asset 1.svg" alt="">
+                <span class="font-medium">Electron Developer</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button class="p-2 md:hidden">
+                <i class="fa-solid fa-bars text-gray-600 text-lg" onclick="handleMenu()"></i>
+            </button>
+
+            <div id="nav-dailog" class="fixed bg-white inset-0 hidden">
+                <div id="nav-bar" class="flex justify-between items-center p-3 h-auto">
+                    <a href="#" id="brandLogo" class="flex gap-1 items-center">
+                        <img class="object-cover max-w-12 max-h-12" src="assets/asset 0.png" alt="">
+                        <span class="text-lg font-display font-medium">TechDuniya</span>
+                    </a> 
+                    <button class="p-2 md:hidden">
+                        <i class="fa-solid fa-xmark text-gray-600 text-lg" onclick="handleMenu()"></i>
+                    </button>
+                </div>
+                <div class="mt-6 flex flex-col gap-3 mx-11">
+                    <a href="#" class="font-medium hover:bg-gray-50 p-4 rounded-md duration-300">Pricing</a>
+                    <a href="#" class="font-medium hover:bg-gray-50 p-4 rounded-md duration-300">Docs</a>
+                    <a href="#" class="font-medium hover:bg-gray-50 p-4 rounded-md duration-300">Changelog</a>
+                    <a href="#" class="font-medium hover:bg-gray-50 p-4 rounded-md duration-300">Blogs</a>
+                    <a href="#" class="font-medium hover:bg-gray-50 p-4 rounded-md duration-300">Login</a>
+                </div>
+                <div class="h-[0.5px] bg-gray-300 mx-4 my-2"></div>
+                <button class=" mx-11 my-8 flex gap-2 items-center border hover:bg-slate-50 px-6 py-2 rounded-lg border-gray-600 duration-300">
+                    <img src="./assets/asset 1.svg" alt="">
+                    <span class="font-medium">Electron Developer</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
