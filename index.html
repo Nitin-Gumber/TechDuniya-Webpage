@@ -31,7 +31,7 @@
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
             <button class="p-2 md:hidden">
-                <span  onclick="handleMenu()"><i class="fa-solid fa-bars text-gray-600 text-lg"></i></span>
+                <span onclick="handleMenu()"><i class="fa-solid fa-bars text-gray-600 text-lg"></i></span>
             </button>
 
             <div id="nav-dailog" class="fixed bg-white inset-0 hidden">
@@ -63,7 +63,12 @@
     </div>
 
     <!-- Add Script -->
-    <script src="script.js"></script>
+    <script>
+        function handleMenu() {
+            const navDailog = document.getElementById('nav-dailog');
+            navDailog.classList.toggle('hidden');
+        }
+    </script>
 
 </body>
 </html>
