@@ -12,7 +12,7 @@
 <body>
     <div id="wrapper" class="h-screen w-screen overflow-x-hidden overflow-y-auto">
         <!-- Navbar start -->
-        <nav class="flex justify-between items-center p-3 h-auto sticky top-0 bg-white shadow-md">
+        <nav class="flex justify-between items-center p-3 h-auto sticky top-0 bg-white shadow-md z-50">
             <a href="#" id="brandLogo" class="flex gap-1 items-center">
                 <img class="object-cover max-w-12 max-h-12" src="assets/asset 0.png" alt="">
                 <span class="text-lg font-display font-medium">TechDuniya</span>
@@ -62,10 +62,10 @@
         </nav>
         <!-- Navbar end -->
 
-        <!--Main Section -->
+        <!-- Main Section -->
         <main>
             <!-- Hero Section Start -->
-            <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+            <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
                 <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12">
                     <div id="version-text" class="flex my-6 gap-2 items-center justify-start border border-yellow-300 
                     bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
@@ -94,9 +94,169 @@
                         <button class="px-8 py-3 font-semibold border text-lg sm:text-xl rounded-lg bg-white border-gray-400 hover:border-gray-800 shadow-lg hover:shadow-xl">Read Docs</button>
                     </div>
                 </div>
-            </div>
-        </main>
 
+                <div id="company-container" class="flex flex-col gap-8 items-center ">
+                    <div id="campanies-title" class="flex justify-center items-center gap-2 ">
+                        <img class="translate-y-2" src="assets/asset 2.svg" alt="">
+                        <span class="font-medium">APPS POWERED BY TODESKTOP</span>
+                        <img class="translate-y-2 -scale-x-100" src="assets/asset 2.svg" alt="">
+                    </div>
+                    <div id="lines-group" class="flex flex-wrap gap-4 max-w-4xl min-h-36p-10 justify-center items-center">
+                        <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32 shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300 md:grayscale hover:grayscale-0">
+                            <img src="./assets/asset 3.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce 1</span>
+                        </div>
+
+                        <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32 shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300 md:grayscale hover:grayscale-0">
+                            <img src="./assets/asset 24.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Voiceflow</span>
+                        </div>
+                        <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32 shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300 md:grayscale hover:grayscale-0">
+                            <img src="./assets/asset 17.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Rise</span>
+                        </div>
+                        <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32 shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300 md:grayscale hover:grayscale-0">
+                            <img src="./assets/asset 18.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">LifeAt</span>
+                        </div>
+
+                        <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32 shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300 md:grayscale hover:grayscale-0">
+                            <img src="./assets/asset 20.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Moises</span>
+                        </div>
+
+                        <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32 shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300 md:grayscale hover:grayscale-0">
+                            <img src="./assets/asset 22.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Cursor</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- Hero Section end -->
+        </main>
+        <!-- Main section end -->
+
+        <!-- step by step -->
+        <div id="steps" class="flex flex-col gap-6 max-w-7xl mt-16 mx-auto py-12 px-6 lg:px-8 lg:mt-32">
+            <h2 class="text-5xl sm:font-semibold mb-14">How it works</h2>
+            <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row shadow-md">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 font-medium rounded-lg font-display">Step 1</span>
+                    <h3 class="text-4xl ">Bootstrap straight from your web app</h3>
+                    <p class="text-lg font-light">Copy and paste your web app url into ToDesktop Customise your app design and window frame UI with no code.</p>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500 group"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-12">
+                    <img src="./assets/asset 66.svg" alt="">
+                </div>
+            </div>
+            <div id="step2" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row shadow-md">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 font-medium rounded-lg font-display">Step 2</span>
+                    <h3 class="text-4xl ">Bootstrap straight from your web app</h3>
+                    <p class="text-lg font-light">Copy and paste your web app url into ToDesktop Customise your app design and window frame UI with no code.</p>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500 group"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-12">
+                    <img src="./assets/asset 66.svg" alt="">
+                </div>
+            </div>
+            <div id="step3" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row shadow-md">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 font-medium rounded-lg font-display">Step 3</span>
+                    <h3 class="text-4xl ">Bootstrap straight from your web app</h3>
+                    <p class="text-lg font-light">Copy and paste your web app url into ToDesktop Customise your app design and window frame UI with no code.</p>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500 group"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80 transition duration-300" href="">Multiple windows</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-12">
+                    <img src="./assets/asset 66.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bento grid -->
+        <div id="bento-grid">
+            <!-- Next time: Start Work-----------**** -->
+        </div>
+
+        <!-- <div class="h-[1000px]"></div> -->
     </div>
 
     <!-- Add Script -->
